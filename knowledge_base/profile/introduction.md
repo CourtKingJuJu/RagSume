@@ -51,9 +51,3 @@ I am interested in roles where I can continue developing my technical skills whi
 I enjoy learning by building. When I encounter a new technology or concept, I prefer to understand how it works and then apply it in a project.
 
 I am comfortable working independently on technical problems, but I also value collaboration and communicating technical ideas clearly to other people.
-
-## Important Context
-
-This document provides a general overview of Julian's background and should be used when answering broad questions about his identity, education, interests, technical background, and career direction.
-
-Specific claims about individual jobs, projects, coursework, or technical skills should preferentially be retrieved from the corresponding documents in the knowledge base rather than inferred solely from this introduction.
