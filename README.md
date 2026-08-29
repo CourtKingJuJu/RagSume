@@ -1,11 +1,11 @@
 # RagSume
 
-Using a Retrevial Augmented Generation bot to return relevant stuff from my resume and portfolio and possibly cover letter.
+Using a Retrieval Augmented Generation bot to return relevant stuff from my resume and portfolio and possibly cover letter.
 
 Phases:
 Knowledge base (Done)
-Basic RAG 
-Retreival quality
+Basic RAG
+Retrieval quality
 Evaluation
 Job Matching
 Generation
