@@ -2,11 +2,11 @@
 
 ## Degree Overview
 
-At Dalhousie I completed a Computer Science undergraduate degree.
+At Dalhousie I completed a Computer Science undergraduate degree. With a certificate in Artificial Intelligence and Intelligent Systems and a certificate in Data Science.
 
 ## Graduation
 
-My graduation ceremoney data is October 20th, 2026. Although I have already finished all my required courses and recived grades as of August 30th, 2026.
+My graduation ceremony data is October 20th, 2026. Although I have already finished all my required courses and received grades as of August 30th, 2026.
 
 ## Certifications
 

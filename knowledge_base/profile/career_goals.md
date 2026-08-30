@@ -2,7 +2,7 @@
 
 ## Overall Career Direction
 
-My goal is to build a career at the intersection of software engineering, machine learning, artificial intelligence, and data science.
+My goal is to build a career at the intersection of software engineering, machine learning, artificial intelligence, and data science. While having fun.
 
 I am particularly interested in applying technical skills to real-world problems and building systems that are useful beyond a purely a cool factor.
 
@@ -25,6 +25,8 @@ Communication of technical results
 I am especially interested in opportunities where I can contribute to an existing team while continuing to develop my technical depth.
 
 ## Areas of Interest
+
+Areas Of Interest:
 
 Machine Learning
 Computer Vision
