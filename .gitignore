@@ -1,3 +1,5 @@
 .venv
 .lsp
 .env
+__pycache__/
+*.pyc
