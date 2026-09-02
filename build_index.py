@@ -42,7 +42,10 @@ def load_and_split_kb():
     return documents
 
 def build_index(documents):
-    embedding_model = SentenceTransformer(EMBEDDING_MODEL_NAME)
+    embedding_model = SentenceTransformer(
+        EMBEDDING_MODEL_NAME,
+        device="cpu"
+    )
     chunk_content = [doc.page_content for doc in documents]
     embeddings = embedding_model.encode(
         chunk_content,
