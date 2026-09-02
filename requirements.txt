@@ -2,8 +2,6 @@ fastapi
 uvicorn[standard]
 numpy<2
 faiss-cpu
-sentence-transformers==2.7.0
 openai
 python-dotenv
 langchain-text-splitters
-torch==2.2.2

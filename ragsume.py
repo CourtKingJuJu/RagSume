@@ -3,12 +3,10 @@ import faiss
 import pickle
 
 from pathlib import Path
-from sentence_transformers import SentenceTransformer
 from openai import OpenAI
-import os
 from dotenv import load_dotenv
 
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+EMBEDDING_MODEL_NAME = "text-embedding-3-small"
 DATA = Path("data")
 PROMPT_T = """
 You are RagSume, a career assistant for Julian McCarty.
@@ -39,17 +37,25 @@ class RAG():
         self.index = faiss.read_index(
             str(DATA / "index.faiss")
         )
-        self.embedding_model = SentenceTransformer(
-            EMBEDDING_MODEL_NAME
-        )
         self.client = OpenAI()
       
     def _load_documents(self):
         with open(DATA / "documents.pkl", "rb") as f:
             return pickle.load(f)
 
+    def embed_question(self, question):
+        response = self.client.embeddings.create(
+            model=EMBEDDING_MODEL_NAME,
+            input=question
+        )
+
+        return np.array(
+            response.data[0].embedding,
+            dtype="float32"
+        )
+        
     def retriever(self, question, k):
-        question_embedding = self.embedding_model.encode(question)
+        question_embedding = self.embed_question(question)
         _, indices = self.index.search(np.array([question_embedding]).astype('float32'), k)
         
         return [self.documents[i] for i in indices[0]]
